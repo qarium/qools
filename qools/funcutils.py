@@ -1,6 +1,6 @@
 import typing as t
-from threading import Lock
 from functools import wraps
+from threading import Lock
 
 DEFAULT_TIMEOUT: t.Final = 5
 DEFAULT_DELAY: t.Final = 0.5
