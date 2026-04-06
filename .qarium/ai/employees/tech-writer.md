@@ -25,3 +25,4 @@
 
 | Problem | Why | How to prevent |
 |---------|-----|----------------|
+| `docs/overrides/main.html` did not match template | Onboarding used minimal overrides instead of full template | Audit overrides during onboarding verification, compare with `.claude/templates/` |
