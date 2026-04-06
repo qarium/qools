@@ -20,6 +20,7 @@
 | Publish      | publish.yml        | workflow_dispatch               | Build + publish to PyPI + GitHub Release |
 | New Version  | new_version.yml    | workflow_dispatch               | Create X.Y.x branch, set as default   |
 | Strictacode  | strictacode.yml    | push/PR to 0.0.x               | Code quality analysis                  |
+| Notify       | notify.yml         | workflow_run after Publish Release | Telegram notification on release   |
 
 ### Conventions
 
