@@ -46,3 +46,6 @@ Typical use cases:
 - One-time initialization (database connections, config loading)
 - Lazy singletons
 - Expensive computations that should not repeat
+
+!!! note
+    If the first call raises an exception, the exception propagates to the caller, but the function is still marked as called — all subsequent calls return `None` without retrying. Wrap the first call in error handling if a retry may be needed.

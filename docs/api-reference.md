@@ -32,6 +32,13 @@ service = create_service()  # Creating service...
 service = create_service()  # cached, no output
 ```
 
+**Notes:**
+
+- Only the first invocation's arguments take effect: arguments passed to subsequent calls are ignored, and the cached result of the first call is returned.
+- The wrapper preserves the decorated function's metadata (`__name__`, `__doc__`, etc.) via `functools.wraps`.
+- If the first call raises an exception, the exception propagates to the caller, but the function is still marked as called — all subsequent calls return `None` without retrying.
+- Thread safety is provided by a single `threading.Lock`: concurrent callers block until the first call completes, then receive the cached result.
+
 ### Constants
 
 | Name | Type | Value | Description |

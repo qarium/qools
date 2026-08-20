@@ -6,6 +6,9 @@ site_url: https://qarium.github.io/qools/
 repo_url: https://github.com/qarium/qools
 edit_uri: edit/0.0.x/docs/
 
+markdown_extensions:
+  - admonition
+
 theme:
   name: material
   custom_dir: docs/overrides

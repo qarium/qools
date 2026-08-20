@@ -1,0 +1,7 @@
+# Traceability: documentation page -> cell directory paths.
+# Rules:
+#   - entries MUST reference cell directory paths (e.g. `auth/data`)
+#   - each cell path MUST exist as a directory containing a CODEMANIFEST file
+# No goga cells are bootstrapped in this repository yet;
+# the mapping is intentionally empty.
+{}
