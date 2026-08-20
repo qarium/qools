@@ -4,7 +4,7 @@ site_name: qools
 site_description: Utility tools from Qarium
 site_url: https://qarium.github.io/qools/
 repo_url: https://github.com/qarium/qools
-edit_uri: edit/0.0.x/docs/
+edit_uri: edit/1.0.x/docs/
 
 markdown_extensions:
   - admonition
